@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+p, ul {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #424242;
+}
+
+a:link, a:visited {
+    color: rgba(0, 0, 0, 0.30);
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+a:hover {
+  color: #ff5252;
+}
+
+nav a.navbar-item:link, nav a.navbar-item:visited {
+  border: none;
+}
+
+nav a.navbar-item:hover {
+  color: #ff5252;
+}
+
+.avatar-container {
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.post-content {
+  font-size: 0.9rem;
+  min-height: 50vh;
+}
+
+.post-content h1, .post-content h2, .post-content h3 {
+  font-size: inherit;
+}
+
+/* .post-content h1::before {
+  content: "# ";
+  margin-left: -1ch;
+} */
+
+.post-content p, .post-content ul {
+  font-size: inherit;
+}
+
+/* PROJECTS */
+
+.project {
+  padding-top: 6%;
+}
+
+/* BOOKSHELF */
+
+section.bookshelf {
+    padding: 24px 0 24px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+section.bookshelf h4 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+section.bookshelf p {
+}
+
+/* MISC */
+
+/* from http://embedresponsively.com/ */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container-gform {
+  position: relative;
+  padding-bottom: 160%; /* empirically this sorta works */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe, .embed-container object, .embed-container embed,
+.embed-container-gform iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
