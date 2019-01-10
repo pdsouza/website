@@ -22,6 +22,8 @@ a:hover {
   color: #ff5252;
 }
 
+/* NAVBAR */
+
 nav a.navbar-item:link, nav a.navbar-item:visited {
   border: none;
 }
@@ -29,6 +31,26 @@ nav a.navbar-item:link, nav a.navbar-item:visited {
 nav a.navbar-item:hover {
   color: #ff5252;
 }
+
+.navbar-burger {
+  color: rgba(0, 0, 0, 0.30);
+}
+
+.navbar-burger:hover {
+  background-color: transparent;
+}
+
+/*
+ * Remove the burger from the footer nav if present
+ * since it doesn't support expanding upwards.
+ */
+@media screen and (max-width: 1087px) {
+  footer .navbar-burger {
+    display: none;
+  }
+}
+
+/* END NAVBAR */
 
 .avatar-container {
   justify-content: center;
