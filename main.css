@@ -7,9 +7,9 @@ html {
 }
 
 a:link, a:visited {
-    color: rgba(0, 0, 0, 0.40);
-    text-decoration: none;
-    border-bottom: 1px dotted;
+  color: rgba(0, 0, 0, 0.40);
+  text-decoration: none;
+  border-bottom: 1px dotted;
 }
 
 a:hover, a:active {
@@ -58,6 +58,11 @@ nav a.navbar-item:hover {
 
 /* POSTS */
 
+.post-header {
+  padding-top: 6rem;
+  padding-bottom: 0;
+}
+
 .post-left {
   text-align: right;
 }
@@ -71,15 +76,8 @@ nav a.navbar-item:hover {
   min-height: 75vh;
 }
 
-.post-content h1 {
-  font-size: 1rem;
-  font-weight: normal;
-  margin-bottom: 1.5rem;
-}
-
 .post-content h2, .post-content h3 {
   font-size: 1rem;
-  font-weight: normal;
   margin-bottom: 1.5rem;
 }
 
@@ -88,20 +86,20 @@ nav a.navbar-item:hover {
   text-align: center;
 }
 
-.post-content h1::before {
-  content: "# ";
-  color: #ff5252;
-  font-weight: 300;
+.post-content blockquote {
+  font-family: monospace;
+  font-size: 0.9rem;
+  background-color: transparent;
+  border: none;
 }
 
-.post-content h2::before {
-  content: "## ";
-  color: #ff5252;
-  font-weight: 300;
+.post-content ol, .post-content ul {
+  /* offset this margin with padding on li */
+  margin-left: -0.25rem;
 }
 
-.post-content p, .post-content ul {
-  font-size: inherit;
+.post-content ol > li, .post-content ul > li {
+  padding-left: 0.25rem;
 }
 
 .post {
