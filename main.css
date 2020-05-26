@@ -460,6 +460,10 @@ footer .separator {
   margin-bottom: 0;
 }
 
+.post-header .avatar img {
+  width: 54px;
+}
+
 .post-content,
 .post-content p,
 .post-content ol,
